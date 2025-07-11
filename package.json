@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "clean": "rm -rf dist",
     "watch": "tsc -w",
     "test": "jest",
@@ -35,9 +35,10 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "husky": "^9.1.7",
-    "jest": "^30.0.4",
+    "jest": "^30.0.3",
     "lint-staged": "^16.1.2",
     "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3"
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.4.0"
   }
 }
