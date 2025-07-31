@@ -8,7 +8,8 @@
     "dev": "nodemon run dest/index.js",
     "build": "tsc && tsc-alias",
     "clean": "rm -rf dist",
-    "watch": "concurrently -k -n TSC,ALIAS,SERVER -c yellow,cyan,blue \"tsc -w\" \"nodemon --watch dist --ext js --exec 'tsc-alias'\"  \"nodemon 'dest/index.js'\"",
+    "dev:watch": "concurrently -k -n TSC,ALIAS,SERVER -c yellow,cyan,blue \"tsc -w\" \"nodemon --watch dist --ext js --exec 'tsc-alias'\"  \"nodemon 'dest/index.js'\"",
+    "watch": "tsc -w && tsc-alias",
     "test": "jest",
     "test:watch": "jest --watch",
     "prepare": "husky"
